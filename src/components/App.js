@@ -17,11 +17,19 @@ function App() {
 }
 
 const Container = styled.div`
+  background: #f9f9f9;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
   img{
     position:center;
     display:flex;
     justify-content:center;
   }
+  
+  height: 100%;
 `
 const rotation = keyframes`
   from {
@@ -39,6 +47,15 @@ const Wrapper = styled.div`
   background-position-x: 125%;
   background-position-y: 5%;
   background-attachment: fixed;
+  animation: ${rotation} 10s infinite linear;
+
+  
+  Header{
+    z-index:0;
+  }
+  Main{
+    z-index:0;
+  }
 `
 
 export default App;

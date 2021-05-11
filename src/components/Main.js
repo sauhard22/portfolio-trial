@@ -24,12 +24,11 @@ const Main = () => {
                         <p className="desc dsp-itms">
                             <li>JavaScript</li>
                             <li>React.js</li>
-                            <li>Node.js</li>
-                            <Software>
+                            <li>Node.js</li>   
                             <li>Adobe Photoshop</li>
                             <li>Adobe Illustrator</li>
                             <li>Adobe Premiere Pro</li>
-                            </Software>
+                            <li>Adobe After Effects</li>
                         </p>
                     </Description>
                 </Wrapper> 
@@ -38,15 +37,11 @@ const Main = () => {
                     <br/>
                     <p></p>
                     <br/>
-                    <p className="desc">Creative web developer, <br/> designer, editor, and a mo   tion artist</p>
+                    <p className="desc">Creative web developer, <br/> designer, editor, and a motion artist</p>
                 </Wrapper>     
             </Container>
     )
 }
-
-const Software = styled.div`
-    display: flex;
-`
 
 const Description = styled.div`
 
@@ -61,7 +56,7 @@ const Description = styled.div`
         font-weight: normal;
         font-size: 25px;
         line-height: 27px;
-        margin-right: 60px;
+        margin-right: 50px;
     }
 
 `
