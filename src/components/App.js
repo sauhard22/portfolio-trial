@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import Header from './Header'
 import Main from './Main'
 import React from '../assets/react.svg'
@@ -17,15 +17,28 @@ function App() {
 }
 
 const Container = styled.div`
-
+  img{
+    position:center;
+    display:flex;
+    justify-content:center;
+  }
 `
+const rotation = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+`
+
 
 const Wrapper = styled.div`
   background-image: url(${React});
   background-repeat:no-repeat;
-  background-position: top right;
-  vertical-align: top;
-  shape-outside: circle(50%);
+  background-position-x: 125%;
+  background-position-y: 5%;
+  background-attachment: fixed;
 `
 
 export default App;

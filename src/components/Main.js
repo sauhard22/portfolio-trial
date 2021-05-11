@@ -69,7 +69,7 @@ const Description = styled.div`
 const Container = styled.div`
     
     padding: 90px 19%;
-    
+    padding-bottom:0;
     
     p{
         margin:0;
